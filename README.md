@@ -1,2 +1,2 @@
 # Server
-Setup Webserver by shell
+Setup Webserver
