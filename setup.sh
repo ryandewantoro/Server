@@ -9,3 +9,4 @@ apt-get install mysql-server
 apt-get install phpmyadmin
 apt-get install samba
 echo "Install Selesai.......";
+sh setting.sh
