@@ -7,4 +7,5 @@ service apache2 restart
 apt-get install php5-curl php5-gd php5-snmp snmp curl git
 apt-get install mysql-server
 apt-get install phpmyadmin
-echo "Install Selesai";
+apt-get install samba
+echo "Install Selesai.......";
