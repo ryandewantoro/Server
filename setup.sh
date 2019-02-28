@@ -17,4 +17,4 @@ a2enconf adminer.conf
 systemctl reload apache2
 echo "Visit adminer http://<Server_IP_or_Domain>/adminer.php";
 echo "Install Selesai.......";
-sh setting.sh
+#sh setting.sh
