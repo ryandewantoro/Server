@@ -8,7 +8,7 @@ apt-get install php5-curl php5-gd php5-snmp snmp curl git php5-pgsql
 apt-get install mysql-server
 apt-get install phpmyadmin
 #apt-get install samba
-apt-get install postgresql postgresql-contrib
+#apt-get install postgresql postgresql-contrib
 #mkdir /usr/share/adminer
 #wget "http://www.adminer.org/latest.php" -O /usr/share/adminer/latest.php
 #ln -s /usr/share/adminer/latest.php /usr/share/adminer/adminer.php
