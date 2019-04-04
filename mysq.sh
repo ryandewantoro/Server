@@ -37,16 +37,17 @@ create database db_umsida;
 grant replication slave on *.* to 'replicator'@'%';
 
 slave stop; 
-CHANGE MASTER TO MASTER_HOST = '111.111.111.111', MASTER_USER = 'replicator', MASTER_PASSWORD = 'password', MASTER_LOG_FILE = 'mysql-bin.000001', MASTER_LOG_POS = 107; 
+CHANGE MASTER TO MASTER_HOST = '192.168.10.22', MASTER_USER = 'replicator', MASTER_PASSWORD = 'password', MASTER_LOG_FILE = 'mysql-bin.000001', MASTER_LOG_POS = 107; 
 slave start;
 
 show master status;
 
 slave stop; 
-CHANGE MASTER TO MASTER_HOST = '222.222.222.222', MASTER_USER = 'replicator', MASTER_PASSWORD = 'password', MASTER_LOG_FILE = 'mysql-bin.000005', MASTER_LOG_POS = 109; 
+CHANGE MASTER TO MASTER_HOST = '92.168.10.23', MASTER_USER = 'replicator', MASTER_PASSWORD = 'password', MASTER_LOG_FILE = 'mysql-bin.000005', MASTER_LOG_POS = 109; 
 slave start;
 
 create database contohdb;
 create table contohdb.dummy (`id` varchar(10));
 show tables in contohdb;
 
+# link https://linux.tutorials.id/cara-setting-dan-syncronize-mysql-master-master/
