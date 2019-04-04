@@ -53,3 +53,5 @@ create table contohdb.dummy (`id` varchar(10));
 show tables in contohdb;
 
 # link https://linux.tutorials.id/cara-setting-dan-syncronize-mysql-master-master/
+
+#http://www.clusterdb.com/mysql-cluster/get-mysql-replication-up-and-running-in-5-minutes
