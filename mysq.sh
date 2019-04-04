@@ -19,7 +19,7 @@ grant replication slave on *.* to 'replicator'@'%';
 show master status;
 
 
-echo "pindah ke server satunya";
+echo "pindah ke server B";
 
 apt-get install mysql-server mysql-client
 
@@ -31,19 +31,21 @@ binlog_do_db           = db_umsida
 /etc/init.d/mysql restart
 
 mysql -u root -proot
-create user 'replicator'@'%' identified by 'password';
+create user 'replicator'@'%' identified by 'root';
 create database db_umsida;
 
 grant replication slave on *.* to 'replicator'@'%';
 
 slave stop; 
-CHANGE MASTER TO MASTER_HOST = '192.168.10.22', MASTER_USER = 'replicator', MASTER_PASSWORD = 'password', MASTER_LOG_FILE = 'mysql-bin.000001', MASTER_LOG_POS = 107; 
+CHANGE MASTER TO MASTER_HOST = '192.168.10.22', MASTER_USER = 'replicator', MASTER_PASSWORD = 'root', MASTER_LOG_FILE = 'mysql-bin.000001', MASTER_LOG_POS = 107; 
 slave start;
 
 show master status;
 
+echo "pindah ke server A";
+
 slave stop; 
-CHANGE MASTER TO MASTER_HOST = '92.168.10.23', MASTER_USER = 'replicator', MASTER_PASSWORD = 'password', MASTER_LOG_FILE = 'mysql-bin.000005', MASTER_LOG_POS = 109; 
+CHANGE MASTER TO MASTER_HOST = '192.168.10.23', MASTER_USER = 'replicator', MASTER_PASSWORD = 'root', MASTER_LOG_FILE = 'mysql-bin.000002', MASTER_LOG_POS = 109; 
 slave start;
 
 create database contohdb;
