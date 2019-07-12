@@ -7,6 +7,7 @@ service apache2 restart
 apt-get install php5-curl php5-gd php5-snmp snmp curl git php5-pgsql
 apt-get install mysql-server
 apt-get install phpmyadmin
+a2enmod ssl
 #apt-get install samba
 #apt-get install postgresql postgresql-contrib
 #mkdir /usr/share/adminer
