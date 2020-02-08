@@ -2,6 +2,6 @@
 apt-get install phpunit
 apt-get install php-mbstring
 apt-get install unzip
-sudo apt-get install php-gd
-sudo apt-get install php-intl
-sudo apt-get install php-xsl
+apt-get install php-gd
+apt-get install php-intl
+apt-get install php-xsl
