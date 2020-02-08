@@ -1,0 +1,307 @@
+#terminalcantik
+
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
+# If not running interactively, don't do anything
+[ -z "$PS1" ] && return
+
+# don't put duplicate lines in the history. See bash(1) for more options
+export HISTCONTROL=ignoredups
+# ... and ignore same sucessive entries.
+export HISTCONTROL=ignoreboth
+
+# check the window size after each command and, if necessary,
+# update the values of LINES and COLUMNS.
+shopt -s checkwinsize
+
+# make less more friendly for non-text input files, see lesspipe(1)
+[ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
+
+# set variable identifying the chroot you work in (used in the prompt below)
+if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
+    debian_chroot=$(cat /etc/debian_chroot)
+fi
+
+# set a fancy prompt (non-color, unless we know we "want" color)
+case "$TERM" in
+xterm-color)
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+    ;;
+*)
+    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    ;;
+esac
+
+# Comment in the above and uncomment this below for a color prompt
+#PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+# If this is an xterm set the title to user@host:dir
+case "$TERM" in
+xterm*|rxvt*)
+    PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
+    ;;
+*)
+    ;;
+esac
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+
+#if [ -f ~/.bash_aliases ]; then
+#    . ~/.bash_aliases
+#fi
+
+# enable color support of ls and also add handy aliases
+if [ "$TERM" != "dumb" ]; then
+    eval "`dircolors -b`"
+    alias ls='ls --color=auto'
+    #alias dir='ls --color=auto --format=vertical'
+    #alias vdir='ls --color=auto --format=long'
+fi
+
+# list website
+alias fb=' chromium http://facebook.com/ '
+alias kaskus=' chromium http://kaskus.co.id/ '
+alias email=' chromium http://gmail.com/ '
+alias exploit=' chromium http://exploit-id.com/ '
+alias wiki=' chromium http://wiki.archlinux.org/ '
+alias deviant=' chromium http://deviantart.com/ '
+function encode() { echo -n $@ | perl -pe's/([^-_.~A-Za-z0-9])/sprintf("%%%02X", ord($1))/seg'; }
+function google() { firefox http://www.google.com/search?hl=id#q="`encode $@`" ;}
+
+# Fungsi extract file
+extract () {
+    if [ -f $1 ] ; then
+        case $1 in
+            *.tar.bz2)    tar xjf $1        ;;
+            *.tar.gz)    tar xzf $1        ;;
+            *.bz2)        bunzip2 $1        ;;
+            *.rar)        rar x $1        ;;
+            *.gz)        gunzip $1        ;;
+            *.tar)        tar xf $1        ;;
+            *.tbz2)        tar xjf $1        ;;
+            *.tgz)        tar xzf $1        ;;
+            *.zip)        unzip $1        ;;
+            *.Z)        uncompress $1    ;;
+            *)        echo "'$1' tidak bisa di extract dengan command extract()" ;;
+        esac
+    else
+        echo "'$1' file tidak terdaftar"
+    fi
+}
+
+# Basic command
+#alias home='cd ~/'
+#alias web='cd /var/www'
+#alias install='sudo pacman -S'
+#alias debinstall='sudo dpkg -i'
+#alias update='sudo pacman -Syu'
+#alias semua='ls -la'
+#alias lsl='ls -l'
+#alias admin='sudo su'
+#alias data='sudo mount /dev/sda3 /mnt/DATA'
+alias star='telnet towel.blinkenlights.nl'
+alias bot='python /home/ryan/botgan/botgan.py'
+# tambahkan sesuai kebutuhan
+
+# enable programmable completion features (you don't need to enable
+# this, if it's already enabled in /etc/bash.bashrc and /etc/profile
+# sources /etc/bash.bashrc).
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
+# Warna tput command
+
+Black="$(tput setaf 0)"
+BlackBG="$(tput setab 0)"
+DarkGrey="$(tput bold ; tput setaf 0)"
+LightGrey="$(tput setaf 7)"
+LightGreyBG="$(tput setab 7)"
+White="$(tput bold ; tput setaf 7)"
+Red="$(tput setaf 1)"
+RedBG="$(tput setab 1)"
+LightRed="$(tput bold ; tput setaf 1)"
+Green="$(tput setaf 2)"
+GreenBG="$(tput setab 2)"
+LightGreen="$(tput bold ; tput setaf 2)"
+Brown="$(tput setaf 3)"
+BrownBG="$(tput setab 3)"
+Yellow="$(tput bold ; tput setaf 3)"
+Blue="$(tput setaf 4)"
+BlueBG="$(tput setab 4)"
+LightBlue="$(tput bold ; tput setaf 4)"
+Purple="$(tput setaf 5)"
+PurpleBG="$(tput setab 5)"
+Pink="$(tput bold ; tput setaf 5)"
+Cyan="$(tput setaf 6)"
+CyanBG="$(tput setab 6)"
+LightCyan="$(tput bold ; tput setaf 6)"
+NC="$(tput sgr0)"       # No Color
+
+# Functions
+
+spin ()
+{
+echo -ne "$White-"
+echo -ne "$LightGray\b|"
+echo -ne "$LightGreen\bo"
+sleep .02
+echo -ne "$LightBlue\b-$RC"
+}
+
+teks1 ()
+{
+sleep .02
+echo -ne "$White W"
+sleep .02
+echo -ne e
+sleep .02
+echo -ne l
+sleep .02
+echo -ne c
+sleep .02
+echo -ne o
+sleep .02
+echo -ne m
+sleep .02
+echo -ne e
+sleep .02
+echo -ne " "
+sleep .02
+echo -ne t
+sleep .02
+echo -ne o
+sleep .02
+echo -ne " "
+sleep .02
+echo -ne "$HOSTNAME $NC"
+sleep .02
+}
+
+teks2 ()
+{
+sleep .02
+echo -ne "$LightGreen D"
+sleep .02
+echo -ne u
+sleep .02
+echo -ne t
+sleep .02
+echo -ne a
+sleep .02
+echo -ne " "
+sleep .02
+echo -ne K
+sleep .02
+echo -ne o
+sleep .02
+echo -ne m
+sleep .02
+echo -ne p
+sleep .02
+echo -ne u
+sleep .02
+echo -ne t
+sleep .02
+echo -ne e
+sleep .02
+echo -ne r
+sleep .02
+echo -ne " "
+sleep .02
+echo -ne C
+sleep .02
+echo -ne i
+sleep .02
+echo -ne p
+sleep .02
+echo -ne a
+sleep .02
+echo -ne n
+sleep .02
+echo -ne a
+sleep .02
+echo -ne s
+sleep .02
+sleep .02
+echo -ne " "
+}
+
+load ()
+{
+sleep .5
+echo -ne "$LightGreen ."
+sleep .5
+echo -ne .
+sleep .5
+echo -ne .
+echo -ne .
+sleep .5
+echo -ne .
+sleep .8
+echo -ne "$LightBlue done"
+}
+#INTERFACE=enp2s5
+# Welcome screen
+
+clear;
+echo -e "";
+for i in `seq 1 20` ; do spin; done; teks1; for i in `seq 1 23` ; do spin; done ;echo "";
+echo "";
+echo -ne "$LightBlue Welcome My Boss $White$USER $LightBlue!";
+echo ""; sleep .3;
+echo "";
+echo -ne "$LightBlue Hari & tanggal: $White `date "+%b %d, %Y"`";
+echo ""; sleep .3;
+echo "";
+echo -ne "$Red Please Wait"; load; 
+echo ""; sleep .3;
+echo "";
+echo -ne "$LightBlue Kernel	: $White `uname -smr`";
+echo "";
+echo -ne "$LightBlue IP: 	  $White `/sbin/ip addr show $INTERFACE | grep 'inet ' | cut -d t -f2 | cut -d / -f1 | cut -b 2-`";
+echo "";
+echo -ne "$LightBlue Uptime	: $White `uptime | awk {'print $3" "$4" "$5'} | sed 's/:/ hours, /' | sed -r 's/,$/ minutes/'`";
+echo ""; sleep .3;
+echo "";
+#for i in `seq 1 20` ; do spin; done; teks2; for i in `seq 1 25` ; do spin; done ;echo "";
+echo "" $NC;
+
+#BARU
+brown='\e[0;33m'
+ 
+cyan='\e[0;36m'
+ 
+green='\e[0;34m'
+ 
+white='\e[1;37m'
+ 
+red='\e[1;31m'
+ 
+lightgreen='\e[1;32m'
+ 
+darkgray='\e[1;30m'
+ 
+echo -e $darkgray'================================================================================'
+ 
+echo
+ 
+echo -e $darkgray' [☠]'$darkgray'          ▶ TIDAK ADA SYSTEM YANG SEMPURNA ◀' $darkgray' [☠]'
+  
+echo -e $darkgray' [✯]'$red'        tidak ada tuhan di dunia cyber'$darkgray' [✯]'
+ 
+#echo -e $darkgray' [☠]'$darkgray'           shurian$darkgray'  [☠]'
+ 
+echo
+ 
+echo Today :
+ 
+date
+ 
+echo -e $darkgray'================================================================================'
+
+# Simple bash
+ PS1='\[\033[01;32m\]\u\[\033[01;34m\]@\[\033[01;31m\]\h\[\033[00;34m\]{\[\033[01;34m\]\w\[\033[00;34m\]}\[\033[01;32m\]:\[\033[00m\]'
