@@ -7,4 +7,5 @@ apt-get install php-gd
 apt-get install php-intl
 apt-get install php-xsl
 apt-get install php-gd php-xml php7.3-mbstring
+a2enmod rewrite
 echo "selesai";
