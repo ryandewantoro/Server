@@ -29,7 +29,7 @@ echo "<VirtualHost *:80>
 /etc/init.d/apache2 start | /etc/init.d/apache2 restart | /etc/init.d/apache2 status
 /etc/init.d/php7.3-fpm start | /etc/init.d/php7.3-fpm restart | /etc/init.d/php7.3-fpm status
 echo "<?php phpinfo(); ?>" > /var/www/html/info.php
-apt install mysql-server
+apt install mysql-server | /etc/init.d/mysql start | /etc/init.d/mysql restart
 mysql_secure_installation
 mysql
 SELECT user,authentication_string,plugin,host FROM mysql.user;
@@ -37,4 +37,4 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '4rt1s4n'
 FLUSH PRIVILEGES;
 SELECT user,authentication_string,plugin,host FROM mysql.user;
 exit | mysql | mysql -u root -p | CREATE USER 'root'@'localhost' IDENTIFIED BY '4rt1s4n'; | GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost' WITH GRANT OPTION;
-exit
+exit | /etc/init.d/mysql restart
