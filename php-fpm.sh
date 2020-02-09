@@ -5,6 +5,7 @@ apt install software-properties-common | add-apt-repository ppa:ondrej/php
 apt update
 apt install php7.3 php7.3-fpm
 a2enmod actions fcgid alias proxy_fcgi
+mkdir /var/www/html/airprigen | /var/www/html/airprigen/public_html | /var/www/html/airprigen/logs
 echo "<VirtualHost *:80>
     ServerName airprigen.com
     ServerAlias www.airprigen.com
