@@ -26,4 +26,6 @@ echo "<VirtualHost *:80>
     ErrorLog /var/www/html/airprigen/public_html/logs/error.log
     CustomLog /var/www/html/airprigen/public_html/logs/access.log combined
 </VirtualHost>" > /etc/apache2/sites-available/airprigen.com.conf
+/etc/init.d/apache2 start | /etc/init.d/apache2 restart | /etc/init.d/apache2 status
+/etc/init.d/php7.3-fpm start | /etc/init.d/php7.3-fpm restart | /etc/init.d/php7.3-fpm status
 echo "<?php phpinfo(); ?>" > /var/www/html/info.php
