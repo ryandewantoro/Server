@@ -1,4 +1,9 @@
 #!/bin/bash
+# must root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
+fi
 echo "Memulai install";
 apt-get update && apt-get upgrade
 apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt php5-mysql php5-common php5-cli curl
