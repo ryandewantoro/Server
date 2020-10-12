@@ -28,7 +28,11 @@ MaxRequestsPerChild  4000
 #mysql
 max_connections = 1000
 
-
+memory_limit = 10G
+upload_max_filesize = 12M
+post_max_size = 13M
+file_uploads = On
+max_execution_time = 180
 
 #apt-get install samba
 #apt-get install postgresql postgresql-contrib
