@@ -28,6 +28,7 @@ MaxRequestsPerChild  4000
 #mysql
 max_connections = 1000
 
+#php.ini
 memory_limit = 10G
 upload_max_filesize = 12M
 post_max_size = 13M
