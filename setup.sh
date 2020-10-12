@@ -25,6 +25,11 @@ MaxClients         512
 MaxRequestsPerChild  4000
 </IfModule>
 
+#mysql
+max_connections = 1000
+
+
+
 #apt-get install samba
 #apt-get install postgresql postgresql-contrib
 #mkdir /usr/share/adminer
