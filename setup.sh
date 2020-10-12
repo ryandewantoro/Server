@@ -13,6 +13,18 @@ apt-get install php5-curl php5-gd php5-snmp snmp curl git php5-pgsql
 apt-get install mysql-server mysql-client
 apt-get install phpmyadmin
 a2enmod ssl
+
+#apache2.conf
+MaxKeepAliveRequests 0
+<IfModule prefork.c>
+StartServers       8
+MinSpareServers    5
+MaxSpareServers    100
+ServerLimit        512
+MaxClients         512
+MaxRequestsPerChild  4000
+</IfModule>
+
 #apt-get install samba
 #apt-get install postgresql postgresql-contrib
 #mkdir /usr/share/adminer
