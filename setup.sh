@@ -16,6 +16,8 @@ a2enmod ssl
 
 #apache2.conf
 MaxKeepAliveRequests 0
+
+echo "
 <IfModule prefork.c>
 StartServers       8
 MinSpareServers    5
@@ -24,6 +26,7 @@ ServerLimit        512
 MaxClients         512
 MaxRequestsPerChild  4000
 </IfModule>
+" >> readme.txt
 
 #mysql
 max_connections = 1000
