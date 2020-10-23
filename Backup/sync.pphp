@@ -15,8 +15,8 @@
 <!-- Progress bar holder -->
 <div id='progress' style='width:100%;'></div>
 <?php
-$almanar=pg_connect("host=192.168.10.88 port=1912 dbname=al_manar user=jarvis password=pu5K0m1912oye");
-$radius=mysqli_connect("localhost","root","4rt1s4n","radius");
+$almanar=pg_connect("host=localhost port=5432 dbname=database user=root password=root");
+$radius=mysqli_connect("localhost","root","root","database");
 
 
 
