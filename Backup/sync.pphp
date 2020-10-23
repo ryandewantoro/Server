@@ -1,0 +1,77 @@
+<style>
+#progress{overflow: hidden;}
+#progress .progress-bar{
+	background:#337ab7;
+	padding:5px;
+	overflow:hidden;
+	text-align:center;
+	color:#fff;
+	font-size:14px;
+	font-family:Arial;
+	max-height:20px;
+	overflow: hidden;
+}
+</style>
+<!-- Progress bar holder -->
+<div id='progress' style='width:100%;'></div>
+<?php
+$almanar=pg_connect("host=192.168.10.88 port=1912 dbname=al_manar user=jarvis password=pu5K0m1912oye");
+$radius=mysqli_connect("localhost","root","4rt1s4n","radius");
+
+
+
+//============ "sync kar";
+$qkar = pg_query($almanar,"SELECT username, password FROM user_jurnal");
+$i=1;$total=pg_num_rows($qkar);
+while($kar=pg_fetch_array($qkar)){
+  $jml=mysqli_num_rows(mysqli_query($radius,"select username from radcheck where username='".$kar['username']."'"));
+  if($jml>=1){
+    $qq=mysqli_query($radius,"update radcheck set value='".$kar['password']."' where username='".$kar['username']."'");
+  }else{
+    $qq=mysqli_query($radius,"insert into radcheck (username, attribute, op, value) values ('".$kar['username']."', 'Password', '==', '".$kar['password']."')");
+  }
+
+
+	$percent = intval($i/$total * 100)."%";
+	// Javascript for updating the progress bar and information
+	echo '<script language="javascript">
+	document.getElementById("progress").innerHTML="<br><br><br><div class=\"progress progress-striped active\"><div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"0\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: '.$percent.'\">Sync Pegawai '.$percent.' Complete</div></div>";
+	</script>';
+	// This is for the buffer achieve the minimum size in order to flush data
+	//echo str_repeat(' ',1024*64);
+	// Send output to browser immediately
+	flush();
+	$i++;
+}
+
+
+
+
+//============ "sync mhs";
+$qmhs = pg_query($almanar, "SELECT m.nim,m.nama,m.jurusan,m.tahun_masuk,m.tanggal_masuk,m.tanggal_lahir,m.alamat1,m.alamat2,u.expired,u.password FROM mahasiswa m, user_mahasiswa u where m.nim=u.login and m.tahun_masuk between ".(date('Y')-7)." and ".date('Y'));
+$i=1;$total=pg_num_rows($qmhs);
+while($mhs=pg_fetch_array($qmhs)){
+    $jml=mysqli_num_rows(mysqli_query($radius,"select username from radcheck where username='".$mhs['nim']."'"));
+    if($jml>=1){
+      $qq=mysqli_query($radius,"update radcheck set value='".$mhs['password']."' where username='".$mhs['nim']."'");
+    }else{
+      $qq=mysqli_query($radius,"insert into radcheck (username, attribute, op, value) values ('".$mhs['nim']."', 'Password', '==', '".$mhs['password']."')");
+    }
+
+
+  	$percent = intval($i/$total * 100)."%";
+  	// Javascript for updating the progress bar and information
+  	echo '<script language="javascript">
+  	document.getElementById("progress").innerHTML="<br><br><br><div class=\"progress progress-striped active\"><div class=\"progress-bar\" role=\"progressbar\" aria-valuenow=\"0\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: '.$percent.'\">Sync Mahasiswa '.$percent.' Complete</div></div>";
+  	</script>';
+  	// This is for the buffer achieve the minimum size in order to flush data
+  	//echo str_repeat(' ',1024*64);
+  	// Send output to browser immediately
+  	flush();
+  	$i++;
+}
+
+// Tell user that the process is completed
+echo '<script language="javascript">document.getElementById("progress").style.display="none";</script>';
+echo "Complete";
+?>
