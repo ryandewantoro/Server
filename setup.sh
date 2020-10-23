@@ -48,6 +48,7 @@ max_execution_time = 180
 echo "Install Selesai.......";
 #sh setting.sh
 
+#install portainer
 apt-get remove docker docker-engine docker.io
 apt install docker.io
 systemctl start docker
