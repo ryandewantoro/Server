@@ -15,13 +15,13 @@
 <!-- Progress bar holder -->
 <div id='progress' style='width:100%;'></div>
 <?php
-$almanar=pg_connect("host=localhost port=5432 dbname=database user=root password=root");
+$koneksi=pg_connect("host=localhost port=5432 dbname=database user=root password=root");
 $radius=mysqli_connect("localhost","root","root","database");
 
 
 
 //============ "sync kar";
-$qkar = pg_query($almanar,"SELECT username, password FROM user_jurnal");
+$qkar = pg_query($koneksi,"SELECT username, password FROM user_jurnal");
 $i=1;$total=pg_num_rows($qkar);
 while($kar=pg_fetch_array($qkar)){
   $jml=mysqli_num_rows(mysqli_query($radius,"select username from radcheck where username='".$kar['username']."'"));
@@ -48,7 +48,7 @@ while($kar=pg_fetch_array($qkar)){
 
 
 //============ "sync mhs";
-$qmhs = pg_query($almanar, "SELECT m.nim,m.nama,m.jurusan,m.tahun_masuk,m.tanggal_masuk,m.tanggal_lahir,m.alamat1,m.alamat2,u.expired,u.password FROM mahasiswa m, user_mahasiswa u where m.nim=u.login and m.tahun_masuk between ".(date('Y')-7)." and ".date('Y'));
+$qmhs = pg_query($koneksi, "SELECT m.nim,m.nama,m.jurusan,m.tahun_masuk,m.tanggal_masuk,m.tanggal_lahir,m.alamat1,m.alamat2,u.expired,u.password FROM mahasiswa m, user_mahasiswa u where m.nim=u.login and m.tahun_masuk between ".(date('Y')-7)." and ".date('Y'));
 $i=1;$total=pg_num_rows($qmhs);
 while($mhs=pg_fetch_array($qmhs)){
     $jml=mysqli_num_rows(mysqli_query($radius,"select username from radcheck where username='".$mhs['nim']."'"));
