@@ -15,7 +15,7 @@ apt-get install phpmyadmin
 a2enmod ssl
 
 #apache2.conf
-MaxKeepAliveRequests 0
+sed -e 's/MaxKeepAliveRequests 100*/MaxKeepAliveRequests 0/g' /etc/apache2/apache2.conf
 
 echo "
 <IfModule prefork.c>
