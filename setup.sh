@@ -26,7 +26,7 @@ ServerLimit        512
 MaxClients         512
 MaxRequestsPerChild  4000
 </IfModule>
-" >> readme.txt
+" >> /etc/apache2/apache2.conf
 
 #mysql
 max_connections = 1000
