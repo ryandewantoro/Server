@@ -51,7 +51,7 @@ binlog_do_db           = db_umsida
 echo "restart mysql";
 /etc/init.d/mysql restart
 
-mysql -u root -proot
+mysql -u $root -p$passwordmysql
 create user 'replicator'@'%' identified by 'root';
 create database db_umsida;
 
