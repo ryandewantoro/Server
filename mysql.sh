@@ -1,15 +1,19 @@
+#konfigurasi
+
+
+#komunikasi
+apt install sshpass
+sshpass -p 'cobasaja' ssh root@10.10.1.10
+
+#install dan konfigurasi database
 echo "program di mulai";
-
 apt-get install mysql-server mysql-client
-
-nano /etc/mysql/my.cnf
-
-#ini di tulis
-server-id              = 1
+echo "menulis script di my.cnf";
+echo "server-id              = 1
 log_bin                = /var/log/mysql/mysql-bin.log
 binlog_do_db           = db_umsida
-#bind-address          = 127.0.0.1
-
+#bind-address          = 127.0.0.1" >> /etc/mysql/my.cnf
+echo "restart mysql";
 /etc/init.d/mysql restart
 
 mysql -u root -proot
