@@ -1,9 +1,14 @@
+#!/bin/bash
+
 #konfigurasi
 
+host="192.168.1.2";
+user="ryan"
+password="1912"
 
 #komunikasi
 apt install sshpass
-sshpass -p 'cobasaja' ssh root@10.10.1.10
+sshpass -p '$password' ssh $user@$host
 
 #install dan konfigurasi database
 echo "program di mulai";
