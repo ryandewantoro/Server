@@ -17,6 +17,10 @@ a2enmod ssl
 #apache2.conf
 sed -e 's/MaxKeepAliveRequests 100*/MaxKeepAliveRequests 0/g' /etc/apache2/apache2.conf
 
+#mematikan http header
+sed -e 's/expose_php = On*/expose_php = Off/g' /etc/apache2/apache2.conf
+
+
 echo "<IfModule prefork.c>
 StartServers       8
 MinSpareServers    5
