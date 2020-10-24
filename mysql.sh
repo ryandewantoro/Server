@@ -1,15 +1,17 @@
 #!/bin/bash
 
 #konfigurasi
-
+#server A
 host="192.168.1.2";
 user="ryan"
 password="1912"
 
+#server B
 hostb="192.168.1.3";
 userb="ryan"
 passwordb="1912"
 
+#Kkoneksi mysql
 usermysql="root"
 passwordmysql="1912"
 
