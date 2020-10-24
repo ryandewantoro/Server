@@ -6,6 +6,10 @@ host="192.168.1.2";
 user="ryan"
 password="1912"
 
+hostb="192.168.1.3";
+userb="ryan"
+passwordb="1912"
+
 usermysql="root"
 passwordmysql="1912"
 
@@ -31,8 +35,8 @@ grant replication slave on *.* to 'replicator'@'%';
 show master status;
 exit;
 
-
 echo "pindah ke server B";
+sshpass -p '$passwordb' ssh $userb@$hostb
 
 apt-get install mysql-server mysql-client
 
