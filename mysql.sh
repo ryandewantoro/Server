@@ -6,6 +6,9 @@ host="192.168.1.2";
 user="ryan"
 password="1912"
 
+usermysql="root"
+passwordmysql="1912"
+
 #komunikasi
 apt install sshpass
 sshpass -p '$password' ssh $user@$host
@@ -21,7 +24,7 @@ binlog_do_db           = db_umsida
 echo "restart mysql";
 /etc/init.d/mysql restart
 
-mysql -u root -proot
+mysql -u $root -p$passwordmysql
 
 create user 'replicator'@'%' identified by 'root';
 grant replication slave on *.* to 'replicator'@'%';
