@@ -29,6 +29,7 @@ mysql -u $root -p$passwordmysql
 create user 'replicator'@'%' identified by 'root';
 grant replication slave on *.* to 'replicator'@'%';
 show master status;
+exit;
 
 
 echo "pindah ke server B";
