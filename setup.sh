@@ -40,6 +40,12 @@ post_max_size = 13M
 file_uploads = On
 max_execution_time = 180
 
+#create virtual host
+
+sitename = "ryandewantoro.com"
+
+echo "" >> /etc/apache2/sites-available/$sitename.conf
+
 #apt-get install samba
 #apt-get install postgresql postgresql-contrib
 #mkdir /usr/share/adminer
