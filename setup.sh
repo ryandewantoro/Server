@@ -44,7 +44,47 @@ max_execution_time = 180
 
 sitename = "ryandewantoro.com"
 
-echo "" >> /etc/apache2/sites-available/$sitename.conf
+echo "
+<VirtualHost *:80>
+        ServerAdmin admin@$sitename
+        ServerName $sitename
+        ServerAlias $sitename
+        DocumentRoot /var/www/html/$sitename/
+        Redirect "/" "https://$sitename"
+</VirtualHost>
+<VirtualHost *:443>
+        SSLEngine On
+        SSLCertificateFile /etc/apache2/ssl/$sitename.crt
+        SSLCertificateKeyFile /etc/apache2/ssl/$sitename.key
+        SSLCACertificateFile /etc/apache2/ssl/$sitename.cer
+
+        ServerAdmin admin@$sitename
+        ServerName $sitename
+        ServerAlias $sitename
+        DocumentRoot /var/www/html/$sitename/
+        <Directory />
+                Options None
+                AllowOverride None
+                Order Deny,Allow
+                Deny from all
+        </Directory>
+        <Directory /var/www/html/$sitename/>
+                Options None +FollowSymLinks
+                AllowOverride All
+                Order allow,deny
+                allow from all
+                Require all granted
+        </Directory>
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+
+        # Possible values include: debug, info, notice, warn, error, crit,
+        # alert, emerg.
+        LogLevel warn
+
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+" >> /etc/apache2/sites-available/$sitename.conf
 
 #apt-get install samba
 #apt-get install postgresql postgresql-contrib
