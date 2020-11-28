@@ -15,3 +15,10 @@ iptables -L
 #iptables-save > /etc/iptables/rules.v4
 #systemctl enable iptables-persistent
 #service iptables-persistent start
+
+
+#rule
+#blok port 22 dari ip 192.168.10.0/24
+
+/etc/hosts.deny
+sshd: 192.168.23.0/255.255.255.0
