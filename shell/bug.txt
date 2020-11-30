@@ -1,2 +1,3 @@
 #bug
 http://antrian.disdukcapil.sidoarjokab.go.id/eantrian/laporan_history_registrasi_online.php?id_layanan=%22+id_layanan+%22&tanggal=%22+tanggal;
+https://b2b.langitnet.com/index.php/CetakFakturJual/Cetak?data=184592
