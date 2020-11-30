@@ -13,3 +13,4 @@ tes " or "a"="a
 tes' or 'a'='a
 tes") or ("a"="a
 tes') or ('a'='a
+'="or'
