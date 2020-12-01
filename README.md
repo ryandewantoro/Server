@@ -14,3 +14,10 @@ Setup Webserver
 3. Buat .conf di /etc/apache2/sites-availabel/
 4. Copy atau kirim ke /etc/apache2/sites-availabel/
 5. Jalankan a2ensite
+
+# Detail setup.sh
+1.
+2. 
+3. 
+4. 
+5. cronjob 1 jam sekali chmod /var/www/html/
