@@ -21,3 +21,4 @@ Setup Webserver
 3. 
 4. 
 5. cronjob 1 jam sekali chmod /var/www/html/
+6. install portainer
