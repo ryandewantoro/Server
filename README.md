@@ -18,7 +18,7 @@ Setup Webserver
 # Detail setup.sh
 1. install lamp
 2. tunning apache2
-3. 
-4. 
+3. tunning mysql
+4. tunning php
 5. cronjob 1 jam sekali chmod /var/www/html/
 6. install portainer
