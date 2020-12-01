@@ -5,6 +5,8 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 echo "Memulai install";
+
+# 1 install lamp
 apt-get update && apt-get upgrade
 apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt php5-mysql php5-common php5-cli curl php-zip
 php5enmod mcrypt
