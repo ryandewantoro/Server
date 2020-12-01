@@ -16,7 +16,7 @@ Setup Webserver
 5. Jalankan a2ensite
 
 # Detail setup.sh
-1.
+1. install lamp
 2. 
 3. 
 4. 
