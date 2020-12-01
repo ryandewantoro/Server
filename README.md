@@ -17,7 +17,7 @@ Setup Webserver
 
 # Detail setup.sh
 1. install lamp
-2. 
+2. tunning apache2
 3. 
 4. 
 5. cronjob 1 jam sekali chmod /var/www/html/
