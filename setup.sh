@@ -102,7 +102,7 @@ echo "* 1 * * * chmod -R 777 /var/www/html/" > /etc/cron.d/jadwal
 echo "Install Selesai.......";
 #sh setting.sh
 
-#install portainer
+# 6 install portainer
 apt-get remove docker docker-engine docker.io
 apt install docker.io
 systemctl start docker
