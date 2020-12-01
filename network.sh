@@ -1,3 +1,9 @@
+#!/bin/bash
+# must root
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   exit 1
+fi
 echo "auto eth0  
 iface eth0 inet static  
 address 192.168.0.100  
