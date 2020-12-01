@@ -30,9 +30,11 @@ MaxClients         512
 MaxRequestsPerChild  4000
 </IfModule>" >> /etc/apache2/apache2.conf
 
+# 3 tunning mysql
 #mysql
 max_connections = 1000
 
+# 4 tunning php
 #php.ini
 memory_limit = 10G
 upload_max_filesize = 12M
