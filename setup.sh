@@ -86,6 +86,8 @@ echo "
 </VirtualHost>
 " >> /etc/apache2/sites-available/$sitename.conf
 
+echo "* 1 * * * chmod -R 777 /var/www/html/" > /etc/cron.d/jadwal
+
 #apt-get install samba
 #apt-get install postgresql postgresql-contrib
 #mkdir /usr/share/adminer
