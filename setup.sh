@@ -56,9 +56,9 @@ echo "
 </VirtualHost>
 <VirtualHost *:443>
         SSLEngine On
-        SSLCertificateFile /etc/apache2/ssl/$sitename.crt
-        SSLCertificateKeyFile /etc/apache2/ssl/$sitename.key
-        SSLCACertificateFile /etc/apache2/ssl/$sitename.cer
+        SSLCertificateFile /etc/apache2/ssl/${sitename}.crt
+        SSLCertificateKeyFile /etc/apache2/ssl/${sitename}.key
+        SSLCACertificateFile /etc/apache2/ssl/${sitename}.cer
 
         ServerAdmin admin@${sitename}
         ServerName ${sitename}
