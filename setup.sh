@@ -48,11 +48,11 @@ sitename = "ryandewantoro.com"
 
 echo "
 <VirtualHost *:80>
-        ServerAdmin admin@$sitename
-        ServerName $sitename
-        ServerAlias $sitename
-        DocumentRoot /var/www/html/$sitename/
-        Redirect "/" "https://$sitename"
+        ServerAdmin admin@${sitename}
+        ServerName ${sitename}
+        ServerAlias ${sitename}
+        DocumentRoot /var/www/html/${sitename}/
+        Redirect "/" "https://${sitename}"
 </VirtualHost>
 <VirtualHost *:443>
         SSLEngine On
@@ -60,17 +60,17 @@ echo "
         SSLCertificateKeyFile /etc/apache2/ssl/$sitename.key
         SSLCACertificateFile /etc/apache2/ssl/$sitename.cer
 
-        ServerAdmin admin@$sitename
-        ServerName $sitename
-        ServerAlias $sitename
-        DocumentRoot /var/www/html/$sitename/
+        ServerAdmin admin@${sitename}
+        ServerName ${sitename}
+        ServerAlias ${sitename}
+        DocumentRoot /var/www/html/${sitename}/
         <Directory />
                 Options None
                 AllowOverride None
                 Order Deny,Allow
                 Deny from all
         </Directory>
-        <Directory /var/www/html/$sitename/>
+        <Directory /var/www/html/${sitename}/>
                 Options None +FollowSymLinks
                 AllowOverride All
                 Order allow,deny
@@ -86,7 +86,7 @@ echo "
 
         CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
-" >> /etc/apache2/sites-available/$sitename.conf
+" >> /etc/apache2/sites-available/${sitename}.conf
 
 
 # 5 cronjob
