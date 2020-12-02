@@ -91,6 +91,7 @@ echo "
 
 # 5 cronjob
 echo "* 1 * * * chmod -R 777 /var/www/html/" > /etc/cron.d/jadwal
+echo "* 1 * * * chmod -R 777 /var/www/html/" > /etc/cron.hourly/jadwal
 
 #apt-get install samba
 #apt-get install postgresql postgresql-contrib
