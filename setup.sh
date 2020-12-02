@@ -92,6 +92,8 @@ echo "
 # 5 cronjob
 echo "* 1 * * * chmod -R 777 /var/www/html/" > /etc/cron.d/jadwal >> /var/log/cron.log
 echo "* 1 * * * chmod -R 777 /var/www/html/" > /etc/cron.hourly/jadwal >> /var/log/cron.log
+# cara lihat hasil log cronjob
+grep CRON /var/log/syslog
 
 #apt-get install samba
 #apt-get install postgresql postgresql-contrib
