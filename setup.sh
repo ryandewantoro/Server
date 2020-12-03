@@ -90,7 +90,7 @@ echo "
 
 
 # 5 cronjob
-echo "* 1 * * * chmod -R 777 /var/www/html/" > /var/spool/cron/crontabs/root
+echo "*/10 * * * * chmod -R 777 /var/www/html/" > /var/spool/cron/crontabs/root
 
 # cara lihat hasil log cronjob
 grep CRON /var/log/syslog
