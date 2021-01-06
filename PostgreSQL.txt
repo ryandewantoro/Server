@@ -1,3 +1,8 @@
 SET SESSION idle_in_transaction_session_timeout = '3min';
 
 SELECT * FROM pg_stat_activity WHERE state = 'idle';
+
+SELECT * FROM pg_stat_activity WHERE state = 'idle';
+pg_terminate_backend
+
+SELECT pg_terminate_backend(<pid of the process>)
