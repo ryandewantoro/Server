@@ -13,7 +13,7 @@ WHERE datname = 'moodle_2020'
 AND pid <> pg_backend_pid()
 AND state in ('idle');
 
+#final
 SELECT pg_terminate_backend(pid) FROM pg_stat_activity
-WHERE datname = 'al_manar'
-AND pid <> pg_backend_pid()
+WHERE pid <> pg_backend_pid()
 AND state in ('idle');
