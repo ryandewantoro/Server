@@ -25,3 +25,10 @@ work_mem                      10MB
 
 # https://stackoverflow.com/questions/46617329/cpu-100-usage-caused-by-unknown-postgres-query
 SELECT max(now() - xact_start) FROM pg_stat_activity WHERE state IN ('idle in transaction', 'active');
+
+
+#https://github.com/Chocobozzz/PeerTube/issues/2326
+SELECT pid, age(clock_timestamp(), query_start), usename, query 
+FROM pg_stat_activity 
+WHERE query != '<IDLE>' AND query NOT ILIKE '%pg_stat_activity%' 
+ORDER BY query_start desc;
