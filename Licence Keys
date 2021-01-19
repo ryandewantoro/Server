@@ -1,0 +1,39 @@
+Obviously using these keys may be a grey area. I use them for my homelab, but there are no guarentees VMware won't sue you if you use them in a commercial environment.
+VMware vSphere 6 Enterprise Plus	
+1C20K-4Z214-H84U1-T92EP-92838
+1A2JU-DEH12-48460-CT956-AC84D
+MC28R-4L006-484D1-VV8NK-C7R58
+5C6TK-4C39J-48E00-PH0XH-828Q4
+4A4X0-69HE3-M8548-6L1QK-1Y240
+
+VMware vSphere with Operations Management 6 Enterprise	
+4Y2NU-4Z301-085C8-M18EP-2K8M8
+1Y48R-0EJEK-084R0-GK9XM-23R52
+5Z6HK-61L00-M84A0-VR2GP-26UK4
+MF4M2-4RL8P-085L8-QVANK-8P832
+JY2WK-6G10L-H81Z0-QUCZP-1Y842
+
+VMware vCenter Appliance 6.5
+0A0FF-403EN-RZ848-ZH3QH-2A73P
+
+VMware vSphere ESXi 7.0 Enterprise Plus key
+JJ2WR-25L9P-H71A8-6J20P-C0K3F
+HN2X0-0DH5M-M78Q1-780HH-CN214
+JH09A-2YL84-M7EC8-FL0K2-3N2J2
+
+VMware vCenter Server 7 standard
+5U4HH-DCL9N-M8EN9-ZL3QP-028HA
+HZ2W8-D9J0H-48198-K03Q6-APRLA
+MU480-46085-08DA1-T32Z6-1FA7D
+JC612-4LJ03-M8DT9-8L07P-AZHL0
+
+VMware vSphere 7 Enterprise Plus
+JH09A-2YL84-M7EC8-FL0K2-3N2J2
+JJ2WR-25L9P-H71A8-6J20P-C0K3F
+HN2X0-0DH5M-M78Q1-780HH-CN214
+5F64H-4PLD6-488D9-1J07M-0Q266
+
+VMware vSphere 7 Enterprise Plus with Add-on for Kubernetes
+4Y28A-FV213-488Q8-202E6-1P024
+
+Yes I am aware these editions are overkill for most homelab/home usage scenarios but they work
