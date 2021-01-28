@@ -1,7 +1,5 @@
 <?php
 $con = mysqli_connect("localhost:3309","root","putrisaljudan7kurcaci","presensi");
-$insert = mysqli_query($con, "insert into terima (nip, tanggal, jam) values ('".$data['nip']."', '".$data['tanggal']."', '".$data['jam']."')");
-
 
 if(isset($_POST['data'])){
 	
@@ -9,8 +7,12 @@ if(isset($_POST['data'])){
 	$file = fopen('debug.txt', 'a+');
 	foreach($data as $d){
 		$nip = mysqli_real_escape_string($con, $d['nip']);
-		$insert = mysqli_query($con, "insert into terima (nip, tanggal, jam) values ('".$data['nip']."', '".$data['tanggal']."', '".$data['jam']."')");
+		$tanggal = mysqli_real_escape_string($con, $d['tanggal']);
+		$jam = mysqli_real_escape_string($con, $d['jam']);
+		$insert = mysqli_query($con, "insert into terima (nip, tanggal, jam) values ('".$nip."', '".$tanggal."', '".$jam."')");
 	}
 
 }
+header("Location: post.php");
+die();
 ?>
