@@ -1,7 +1,8 @@
 <?php
-$url = 'http://localhost/presensi/data.php';
+$url = 'http://localhost:8080/presensi/';
 $res = file_get_contents($url);
-$result = json_decode($res);
-//var_dump($result);	
-print_r($result);
 ?>
+<form name="input" method="POST" action="db.php">
+	<textarea name="data"><?php echo $res; ?></textarea>
+	<input type="submit" value="Submit">
+</form>
