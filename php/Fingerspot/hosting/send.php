@@ -1,18 +1,22 @@
 <?php
-$con = mysqli_connect("localhost:3309","root","putrisaljudan7kurcaci","presensi");
+$fp = fopen('php://input', 'r');
+$data = stream_get_contents($fp);
 
-if(isset($_POST['data'])){
-	
-	$data = json_decode($_POST['data'], TRUE);
-	$file = fopen('debug.txt', 'a+');
+//print_r($data);
+
+if($data != ''){
+    $data = json_decode($data, TRUE);
+    $con = mysqli_connect("localhost","root","","nama_database");
+
 	foreach($data as $d){
-		$nip = mysqli_real_escape_string($con, $d['nip']);
+	    $nip = mysqli_real_escape_string($con, $d['nip']);
 		$tanggal = mysqli_real_escape_string($con, $d['tanggal']);
 		$jam = mysqli_real_escape_string($con, $d['jam']);
-		$insert = mysqli_query($con, "insert into terima (nip, tanggal, jam) values ('".$nip."', '".$tanggal."', '".$jam."')");
+		$insert = mysqli_query($con, "insert into rb_absensi_gukar (nip, tanggal, jam, lokasi, alamat, jarak, status) values ('".$nip."', '".$tanggal."', '".$jam."','0' ,'sekolah' ,'0' ,'WFO' )");
 	}
-
+	
+    print_r('{"status_code":200, "result":"Berhasil"}');
+    exit;
 }
-header("Location: post.php");
-die();
+print_r('{"status_code":500}');
 ?>
