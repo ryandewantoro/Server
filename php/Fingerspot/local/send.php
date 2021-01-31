@@ -19,7 +19,7 @@ $json = json_encode($data);
 
 function cpost($url = '', $data = '')
 {
-	// $url = 'https://jurnal.sdamada.sch.id/api/post.php';
+	// $url = 'https://localhost/api/post.php';
 	// $data = '{"name": "linuxize", "email": "linuxize@example.com"}';
 	//$data = array(1, 2, 3, 4, 5);
 	$curl = curl_init();
