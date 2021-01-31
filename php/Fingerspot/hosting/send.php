@@ -6,7 +6,7 @@ $data = stream_get_contents($fp);
 
 if($data != ''){
     $data = json_decode($data, TRUE);
-    $con = mysqli_connect("localhost","root","","nama_database");
+    $con = mysqli_connect("localhost","sdamadas_jurnal","udm#G%n~cZhH","sdamadas_jurnal");
 
 	foreach($data as $d){
 	    $nip = mysqli_real_escape_string($con, $d['nip']);
