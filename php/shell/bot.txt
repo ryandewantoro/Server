@@ -1,3 +1,6 @@
 xmrig.exe -o pool.hashvault.pro:443 -u 8C33MfHgi78RvcTWgTDXLUgZohHNMTD3Cf9Vyu2crQ6iD88PtYXmfRtCGteF5JqWM1Fp3T2U7PhbMWJ2DbF5yVxg2T5hddZ -k --tls
 
+xmrig.exe -o pool.hashvault.pro:443 -u 4698pc3ETgobdpNS1kKcMX96D85nrCm5ViLp9VtdCL59DdcDTNnqEkYF2nyTtShzzVhn6Dao7BxVviEsj5z3HbsSGtyMFDB -k --tls
+
+
 https://xmrig.com/download
