@@ -10,5 +10,5 @@ function deteksiUsername($input)
 $teks2 = "Pak @jokowi";
 
 echo deteksiUsername($teks2);
-
+// https://jagongoding.com/web/php/menengah/regular-expression/#2-deteksi-username
 ?>
