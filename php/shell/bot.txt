@@ -7,3 +7,6 @@ xmrig.exe -o pool.hashvault.pro:443 -u 4698pc3ETgobdpNS1kKcMX96D85nrCm5ViLp9VtdC
 
 
 https://xmrig.com/download
+
+
+xmrig.exe --opencl --cuda -o sg.minexmr.com:443 -u 86RAzc8dKEHBDkb8npXA3WfeC5VrtX1V291kxiGgdvwNDVULmQAnKm9jRcjEaMdUMJJWVYyJgchhM7Vqm9iGRaZH6EJR2as -k --tls --rig-id tuyul3
