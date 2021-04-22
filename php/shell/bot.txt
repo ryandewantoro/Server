@@ -14,5 +14,8 @@ xmrig.exe --opencl --cuda -o sg.minexmr.com:443 -u 86RAzc8dKEHBDkb8npXA3WfeC5Vrt
 xmrig-nvidia.exe -B --donate-level 1 -o pool.supportxmr.com:5555 -u 86RAzc8dKEHBDkb8npXA3WfeC5VrtX1V291kxiGgdvwNDVULmQAnKm9jRcjEaMdUMJJWVYyJgchhM7Vqm9iGRaZH6EJR2as -p tuyul3:riiean@umsida.ac.id -k
 
 
-
+#monitor
 https://minexmr.com/dashboard?address=86RAzc8dKEHBDkb8npXA3WfeC5VrtX1V291kxiGgdvwNDVULmQAnKm9jRcjEaMdUMJJWVYyJgchhM7Vqm9iGRaZH6EJR2as
+
+#jika down
+xmrig.exe -o pool.supportxmr.com:443 -u 86RAzc8dKEHBDkb8npXA3WfeC5VrtX1V291kxiGgdvwNDVULmQAnKm9jRcjEaMdUMJJWVYyJgchhM7Vqm9iGRaZH6EJR2as -k --tls -p tuyul11
