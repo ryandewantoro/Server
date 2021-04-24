@@ -1,5 +1,5 @@
 moving average exponential
-8
-13
-21
-55
+8       biru
+13      hijau
+21      kuning
+55      merah
