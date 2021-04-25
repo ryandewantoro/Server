@@ -7,6 +7,9 @@ xmrig.exe -o pool.hashvault.pro:443 -u 4698pc3ETgobdpNS1kKcMX96D85nrCm5ViLp9VtdC
 
 
 https://xmrig.com/download
+wget https://github.com/xmrig/xmrig/releases/download/v6.12.1/xmrig-6.12.1-linux-static-x64.tar.gz
+tar -xf xmrig-6.12.1-linux-static-x64.tar.gz
+cd xmrig-6.12.1-linux-static-x64.tar.gz
 
 
 xmrig.exe --opencl --cuda -o sg.minexmr.com:443 -u 86RAzc8dKEHBDkb8npXA3WfeC5VrtX1V291kxiGgdvwNDVULmQAnKm9jRcjEaMdUMJJWVYyJgchhM7Vqm9iGRaZH6EJR2as -k --tls --rig-id tuyul3
