@@ -3,3 +3,17 @@ moving average exponential
 13      hijau
 21      kuning
 55      merah
+
+==========================
+moving average exponential
+macd
+
+
+13      merah
+8       kuning
+5       biru
+macd
+
+open biru kuning merah
+=========================
+
