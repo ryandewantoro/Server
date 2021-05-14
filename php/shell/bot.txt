@@ -27,3 +27,6 @@ xmrig.exe -o pool.supportxmr.com:443 -u 86RAzc8dKEHBDkb8npXA3WfeC5VrtX1V291kxiGg
 #nicehash moreno
 
 xmrig.exe -o pool.supportxmr.com:443 -u 8C33MfHgi78RvcTWgTDXLUgZohHNMTD3Cf9Vyu2crQ6iD88PtYXmfRtCGteF5JqWM1Fp3T2U7PhbMWJ2DbF5yVxg2T5hddZ -k --tls -p tuyul6
+
+doge
+DFPZLXg4CM7SfsWtyJfvCdfHepbarEtJNo
