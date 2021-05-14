@@ -30,3 +30,4 @@ xmrig.exe -o pool.supportxmr.com:443 -u 8C33MfHgi78RvcTWgTDXLUgZohHNMTD3Cf9Vyu2c
 
 doge
 DFPZLXg4CM7SfsWtyJfvCdfHepbarEtJNo
+./xmrig -o rx.unmineable.com:3333 -u DFPZLXg4CM7SfsWtyJfvCdfHepbarEtJNo -p ngepet -k
