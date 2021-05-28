@@ -11,8 +11,8 @@ wget https://github.com/xmrig/xmrig/releases/download/v6.12.1/xmrig-6.12.1-linux
 tar -xf xmrig-6.12.1-linux-static-x64.tar.gz
 cd xmrig-6.12.1-linux-static-x64.tar.gz
 
-
-xmrig.exe --opencl --cuda -o sg.minexmr.com:443 -u 86RAzc8dKEHBDkb8npXA3WfeC5VrtX1V291kxiGgdvwNDVULmQAnKm9jRcjEaMdUMJJWVYyJgchhM7Vqm9iGRaZH6EJR2as -k --tls --rig-id tuyul3
+#active
+xmrig.exe --opencl --cuda -o sg.minexmr.com:443 -u 87ELWgdpBdgaauBVRMzNnVKFKoGFAHXxEgzBmUEzRiFrAAJtrfwSou8RVcLAkmo1Zp6wrxckjaXAUAhjZW3B8SrjHR5rJui -k --tls --rig-id ngepet1
 
 xmrig-nvidia.exe -B --donate-level 1 -o pool.supportxmr.com:5555 -u 86RAzc8dKEHBDkb8npXA3WfeC5VrtX1V291kxiGgdvwNDVULmQAnKm9jRcjEaMdUMJJWVYyJgchhM7Vqm9iGRaZH6EJR2as -p tuyul3:riiean@umsida.ac.id -k
 
