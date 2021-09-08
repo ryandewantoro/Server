@@ -1,2 +1,4 @@
+aaPanel Internet Address: http://103.139.25.7:8888/4997b121
+aaPanel Internal Address: http://192.168.99.248:8888/4997b121
 username: whgwqnw8
 password: f3776c91
