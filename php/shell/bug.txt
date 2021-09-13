@@ -4,3 +4,4 @@ http://antrian.disdukcapil.sidoarjokab.go.id/eantrian/laporan_history_registrasi
 https://b2b.langitnet.com/index.php/CetakFakturJual/Cetak?data=184592
 http://probni.smamda.sch.id/system/.env
 C:/inetpub/wwwroot/b2blangit/system/database/DB_driver.php
+https://www.t-rakitan.com/pages/promo_show.php?b=3
