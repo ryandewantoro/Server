@@ -13,5 +13,5 @@ docker run -d --restart=always -p 9000:9000 -v /var/run/docker.sock:/var/run/doc
 
 docker volume create pihole
 docker volume create dnsmasq
-docker run --name=pihole -e TZ=Asia/Jakarta -e WEBPASSWORD=dJknse -e SERVERIP=192.168.62.206 -v pihole:/etc/pihole -v dnsmasq:/etc/dnsmasq.d -p 80:80 -p 53:53/tcp -p 53:53/udp --restart=unless-stopped pihole/pihole
+docker run --name=pihole -e TZ=Asia/Jakarta -e WEBPASSWORD=dJknse -e SERVERIP=192.168.62.206 -v pihole:/etc/pihole -v dnsmasq:/etc/dnsmasq.d -p 80:80 -p 53:53/tcp -p 53:53/udp --restart=always pihole/pihole
 echo "Install Selesai.......";
