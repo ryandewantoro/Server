@@ -1,5 +1,5 @@
 <?php
-include_once('../simple_html_dom.php');
+include_once('simple_html_dom.php');
 $target = 'http://www.beritaterheboh.com';
 $html = file_get_html($target);
 
