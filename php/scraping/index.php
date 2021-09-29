@@ -1,50 +1,62 @@
 <?php
-include_once('../simple_html_dom.php');
-
-$target = 'http://www.beritaterheboh.com';
-
+include_once('simple_html_dom.php');
+$target = 'http://192.168.62.206/berita/url.php';
 $html = file_get_html($target);
+preg_match_all('/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i',$html, $result);
+$rand = rand(1, 7);
+$scraping =  $result[0][$rand];
+$a = file_get_html($scraping);
+$nama = $a->find('.post-title');
+$harga = $a->find('.post-body-inner');
 
-$list = $html->find('[class="item-title"]');
-foreach ( $list as $item ) {
-    echo $item->outertext;
-}
-
-$html = file_get_html('http://www.beritaterheboh.com/2021/08/pengamat-ini-tuding-kasus-dinar-candy.html');
-$nama = $html->find('.post-title');
-$harga = $html->find('.post-body-inner');
-$img = $html->find('img');
-//$img = preg_match_all('/<img[^>]+>/i',$html, $result);
-?>
-<table>
-<tr>
-<th>Judul</th>
-<th>Isi</th>
-<th>Gambar</th>
-</tr>
-<td>
-<?php
 foreach ($nama as $key => $value) {
-echo $value->plaintext;
-echo "</br>";}
-?>
-</td>
-<td>
-<?php
-foreach ($harga as $key => $value) {
-echo $value->plaintext;
-echo "</br>";}
-?>
-</td>
-<td>
+$judulx =  $value->plaintext;}
 
-<?php
-//foreach($img as $key => $value){
-//    print_r($value->outertext);
-//echo "/<br>";}
-preg_match_all('/<img[^>]+>/i',$html, $result);
-//print_r($result);
-echo $result[0][5];
-echo '</br>';
+foreach ($harga as $key => $value) {
+$isix =  $value->plaintext;}
+
+$servername = "localhost";
+$username = "ryan";
+$password = "ryan";
+$dbname = "laravel";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+$datenow = date("Y/m/d");
+$bb = implode(" ",$gambar);
+$content = str_replace("&nbsp;", "", $isix);
+$cek = mysqli_num_rows (mysqli_query($conn, "SELECT judul FROM berita WHERE judul='$judulx'"));
+if($cek > 0) {
+        echo "dobel";
+      header("refresh: 3");
+    }
+    else{
+
+$b = file_get_contents($scraping);
+$dom = new DOMDocument(); @$dom->loadHTML($b);
+$xpath = new DOMXPath($dom);
+$images = $xpath->query('//img/@src');
+$img = array(); foreach ($images as $image) {
+    $img[] = $image->nodeValue;
+}
+$gambar = $img[5];
+$rrr = rand(10,100);
+$file = uniqid(rand(), true) . '.png';
+file_put_contents($file, file_get_contents($gambar));
+}
+$content = str_replace("&nbsp;", "", $isix);
+$cek = mysqli_num_rows (mysqli_query($conn, "SELECT judul FROM berita WHERE judul='$judulx'"));
+if($cek > 0) {
+      header("refresh: 3");
+    }
+    else{
+
+$sql = "INSERT INTO berita (url, judul, isi, gambar, tgl)
+VALUES ('$scraping', '$judulx', '$content', '$file', '$datenow')";
+if (mysqli_query($conn, $sql)) {
+  echo "berhasil";
+header("refresh: 3");
+} else {
+  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+mysqli_close($conn);
+}
 ?>
-</td>
