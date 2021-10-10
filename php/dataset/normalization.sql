@@ -1,4 +1,4 @@
-INSERT INTO `kamusalay` (`kata_alay`, `kata_normal`) VALUES ('7an`, `tujuan');
+INSERT INTO `kamusalay` (`kata_alay`, `kata_normal`) VALUES ('7an', 'tujuan');
 INSERT INTO `kamusalay` (`kata_alay`, `kata_normal`) VALUES ('@','di');
 INSERT INTO `kamusalay` (`kata_alay`, `kata_normal`) VALUES ('ababil','abg labil');
 INSERT INTO `kamusalay` (`kata_alay`, `kata_normal`) VALUES ('abis','habis');
