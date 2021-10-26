@@ -5,3 +5,4 @@ https://api-twitter-trends.herokuapp.com/trends?location=indonesia
 https://github.com/binsarjr/chatbot-indonesia
 https://developer.twitter.com/en/docs/twitter-api/conversation-id
 https://www.youtube.com/watch?v=WHJCrXQ9DBs
+https://www.youtube.com/watch?v=KLN2bY0dTtQ
