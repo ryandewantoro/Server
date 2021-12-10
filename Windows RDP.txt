@@ -1,1 +1,4 @@
 https://mohamedhassaneg.wordpress.com/2016/11/08/how-to-crack-remote-desktop-service-on-windows-server-2012-r2/
+
+mematikan firewall windows
+netsh advfirewall set allprofiles state off
