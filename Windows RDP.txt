@@ -6,3 +6,4 @@ netsh advfirewall set allprofiles state off
 sc stop "avast! Antivirus"
 net stop "avast! Antivirus"
 https://bibloblog.com/uninstall-avast-from-command-prompt/
+https://subgadgets.com/solution-uninstall-avast-antivirus-using-command-prompt-and-window-10/
