@@ -4,3 +4,4 @@ mematikan firewall windows
 net user administrator
 netsh advfirewall set allprofiles state off
 sc stop "avast! Antivirus"
+net stop "avast! Antivirus"
