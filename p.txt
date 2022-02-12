@@ -3,3 +3,4 @@ aaPanel Internal Address: http://192.168.99.248:8888/4997b121
 username: whgwqnw8
 password: f3776c91
 grep -lR "document.write(unescape" . > asu.txt
+https://www.youtube.com/watch?v=Wx7WPDnwcDg&ab_channel=LearnLinuxTV
