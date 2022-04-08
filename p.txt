@@ -4,3 +4,12 @@ username: whgwqnw8
 password: f3776c91
 grep -lR "document.write(unescape" . > asu.txt
 https://www.youtube.com/watch?v=Wx7WPDnwcDg&ab_channel=LearnLinuxTV
+
+
+config = {
+    'consumer_key': 'DNvdXQEUSyG3rFtOH6falewYQ',
+    'consumer_secret': 'mCwur0FcidYy2pUMFNXDxNzfSGfFnteNk7BlDsgcbN1PYntnwJ',
+    'access_token': '592759511-HVX4IplQ6BShTlNgaaQ2SrDrWV2JBo9IDD4vgtcU',
+    'access_token_secret': 'zuSsJt6dc3onTAV8eb6Xz2Vd1sOPbVtQnX4UijFwVtJcO'
+}
+
