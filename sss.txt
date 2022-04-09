@@ -1,0 +1,59 @@
+import sqlite3
+import os
+
+class dbConnection:
+
+    file_db_name = "" #database name
+
+    def __init__(self, db_name='twitter.db'):
+       self.file_db_name = db_name
+       if not os.path.exists(self.file_db_name):
+           open(self.file_db_name, "a+")
+
+    def connection(self):
+
+        conn = sqlite3.connect(self.file_db_name)
+        return conn
+
+    def tabel_config(self):
+        create_table_tweets = '''
+        CREATE TABLE IF NOT EXISTS tweets(
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                id_tweet TEXT,
+                id_user TEXT,
+                display_name TEXT,
+                username VARCHAR(200),
+                misc_user TEXT,
+                tweet TEXT,
+                retweet INTEGER,
+                favorite INTEGER,
+                quote_count INTEGER,
+                reply_count INTEGER,
+                tweet_date TEXT,
+                tweet_date_inserted TEXT,
+                source TEXT,
+                keywords TEXT
+        );
+        '''
+
+        create_table_relation = '''
+        CREATE TABLE IF NOT EXISTS relation(
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            id_tweet TEXT,
+            id_user TEXT,
+            username VARCHAR(200),
+            act TEXT,
+            date_insert TEXT
+        );
+        '''
+        
+        config = [create_table_tweets, create_table_relation]
+        conn = self.connection()
+        for x in config:
+            conn.execute(x)
+            print("Done")
+
+    def query_insert_generator(self,tables,columns):
+        escaper = ",".join(["?"]*len(columns.split(",")))
+        query_inst = "INSERT INTO {} ({}) VALUES ({})".format(tables,columns,escaper)
+        return query_inst
