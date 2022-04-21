@@ -8,3 +8,6 @@ net stop "avast! Antivirus"
 https://bibloblog.com/uninstall-avast-from-command-prompt/
 https://subgadgets.com/solution-uninstall-avast-antivirus-using-command-prompt-and-window-10/
 https://winpoin.com/wmic-command-line-tool-terbaik-yang-jarang-diketahui/
+
+mematikan windows defender lewat powershell
+Set-MpPreference -DisableRealtimeMonitoring $true
