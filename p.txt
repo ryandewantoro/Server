@@ -15,53 +15,53 @@ config = {
 
 https://www.rebasedata.com/
 
-desa.kedungbanteng.umsida.ac.id
-desa.putat.umsida.ac.id
-desa.kalitengah.umsida.ac.id
-desa.kalisampurno.umsida.ac.id
-desa.kludan.umsida.ac.id
-desa.boro.umsida.ac.id
-desa.randegan.umsida.ac.id
-desa.kedensari.umsida.ac.id
-desa.ganggangpanjang.umsida.ac.id
-desa.ketegan.umsida.ac.id
-desa.kalidawir.umsida.ac.id
-desa.banjarasri.umsida.ac.id
-desa.banjarpanji.umsida.ac.id
-desa.penatarsewu.umsida.ac.id
-desa.sentul.umsida.ac.id1
-desa.keboguyang.umsida.ac.id
-desa.tanjungsari.umsida.ac.id
-desa.tambakkalisogo.umsida.ac.id
-desa.permisan.umsida.ac.id
-desa.trompoasri.umsida.ac.id
-desa.dukuhsari.umsida.ac.id
-desa.kedungcangkring.umsida.ac.id
-desa.jemirahan.umsida.ac.id
-desa.balongtani.umsida.ac.id
-desa.panggreh.umsida.ac.id
-desa.semambung.umsida.ac.id
-desa.kedungrejo.umsida.ac.id
-desa.kedungpandan.umsida.ac.id  
-desa.prasung.umsida.ac.id
-desa.damarsi.umsida.ac.id
-desa.sawohan.umsida.ac.id
-desa.dukuhtengah.umsida.ac.id
-desa.sukorejo.umsida.ac.id
-desa.sidokepung.umsida.ac.id
-desa.entalsewu.umsida.ac.id
-desa.pagerwojo.umsida.ac.id
-desa.sidomulyo.umsida.ac.id
-desa.banjarsari.umsida.ac.id	
-desa.siwalanpanji.umsida.ac.id			
-desa.wadungasih.umsida.ac.id
-desa.tebel.umsida.ac.id
-desa.karangbong.umsida.ac.id
-desa.sruni.umsida.ac.id					
-desa.keboananom.umsida.ac.id
-desa.keboansikep.umsida.ac.id			
-desa.gedangan.umsida.ac.id				
-desa.wedi.umsida.ac.id
-desa.ketajen.umsida.ac.id					
-desa.punggul.umsida.ac.id
-desa.kragan.umsida.ac.id
+192.168.10.204   desa.kedungbanteng.umsida.ac.id
+192.168.10.204   desa.putat.umsida.ac.id
+192.168.10.204   desa.kalitengah.umsida.ac.id
+192.168.10.204   desa.kalisampurno.umsida.ac.id
+192.168.10.204   desa.kludan.umsida.ac.id
+192.168.10.204   desa.boro.umsida.ac.id
+192.168.10.204   desa.randegan.umsida.ac.id
+192.168.10.204   desa.kedensari.umsida.ac.id
+192.168.10.204   desa.ganggangpanjang.umsida.ac.id
+192.168.10.204   desa.ketegan.umsida.ac.id
+192.168.10.204   desa.kalidawir.umsida.ac.id
+192.168.10.204   desa.banjarasri.umsida.ac.id
+192.168.10.204   desa.banjarpanji.umsida.ac.id
+192.168.10.204   desa.penatarsewu.umsida.ac.id
+192.168.10.204   desa.sentul.umsida.ac.id1
+192.168.10.204   desa.keboguyang.umsida.ac.id
+192.168.10.204   desa.tanjungsari.umsida.ac.id
+192.168.10.204   desa.tambakkalisogo.umsida.ac.id
+192.168.10.204   desa.permisan.umsida.ac.id
+192.168.10.204   desa.trompoasri.umsida.ac.id
+192.168.10.204   desa.dukuhsari.umsida.ac.id
+192.168.10.204   desa.kedungcangkring.umsida.ac.id
+192.168.10.204   desa.jemirahan.umsida.ac.id
+192.168.10.204   desa.balongtani.umsida.ac.id
+192.168.10.204   desa.panggreh.umsida.ac.id
+192.168.10.204   desa.semambung.umsida.ac.id
+192.168.10.204   desa.kedungrejo.umsida.ac.id
+192.168.10.204   desa.kedungpandan.umsida.ac.id  
+192.168.10.204   desa.prasung.umsida.ac.id
+192.168.10.204   desa.damarsi.umsida.ac.id
+192.168.10.204   desa.sawohan.umsida.ac.id
+192.168.10.204   desa.dukuhtengah.umsida.ac.id
+192.168.10.204   desa.sukorejo.umsida.ac.id
+192.168.10.204   desa.sidokepung.umsida.ac.id
+192.168.10.204   desa.entalsewu.umsida.ac.id
+192.168.10.204   desa.pagerwojo.umsida.ac.id
+192.168.10.204   desa.sidomulyo.umsida.ac.id
+192.168.10.204   desa.banjarsari.umsida.ac.id	
+192.168.10.204   desa.siwalanpanji.umsida.ac.id			
+192.168.10.204   desa.wadungasih.umsida.ac.id
+192.168.10.204   desa.tebel.umsida.ac.id
+192.168.10.204   desa.karangbong.umsida.ac.id
+192.168.10.204   desa.sruni.umsida.ac.id					
+192.168.10.204   desa.keboananom.umsida.ac.id
+192.168.10.204   desa.keboansikep.umsida.ac.id			
+192.168.10.204   desa.gedangan.umsida.ac.id				
+192.168.10.204   desa.wedi.umsida.ac.id
+192.168.10.204   desa.ketajen.umsida.ac.id					
+192.168.10.204   desa.punggul.umsida.ac.id
+192.168.10.204   desa.kragan.umsida.ac.id
