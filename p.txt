@@ -15,147 +15,53 @@ config = {
 
 https://www.rebasedata.com/
 
-
-<a href="http://desa.kedungbanteng.umsida.ac.id">1. Kedung Banteng</a>
-							</div>
-							<div>
-								<a href="http://desa.putat.umsida.ac.id">2. Putat</a>
-							</div>
-							<div>
-								<a href="http://desa.kalitengah.umsida.ac.id">3. Kalitengah</a>
-							</div>
-							<div>
-								<a href="http://desa.kalisampurno.umsida.ac.id">4. Kalisampurno</a>
-							</div>
-							<div>
-								<a href="http://desa.kludan.umsida.ac.id"></i>5. Kludan</a>
-							</div>
-							<div>
-								<a href="http://desa.boro.umsida.ac.id">6. Boro</a>
-							</div>
-							<div>
-								<a href="http://desa.randegan.umsida.ac.id">7. Randegan</a>
-							</div>
-							<div>
-								<a href="http://desa.kedensari.umsida.ac.id">8. Kedensari</a>
-							</div>
-							<div>
-								<a href="http://desa.ganggangpanjang.umsida.ac.id">9. Ganggang Panjang</a>
-							</div>
-							<div>
-								<a href="http://desa.ketegan.umsida.ac.id">10. Ketegan</a>
-							</div>
-							<div>
-								<a href="http://desa.kalidawir.umsida.ac.id">11. kalidawir</a>
-							</div>
-							<div>
-								<a href="http://desa.banjarasri.umsida.ac.id">12. Banjar Asri</a>
-							</div>
-							<div>
-								<a href="http://desa.banjarpanji.umsida.ac.id">13. Banjar Panji</a>
-							</div>
-							<div>
-								<a href="http://desa.penatarsewu.umsida.ac.id">14. Penatar Sewu</a>
-							</div>
-							<div>
-								<a href="http://desa.sentul.umsida.ac.id">15. Sentul</a>
-                                
-                                <a href="http://desa.keboguyang.umsida.ac.id">1. Keboguyang</a>
-							</div>
-							<div>
-								<a href="http://desa.tanjungsari.umsida.ac.id">2. Kupang (Dusun Tanjungsari)</a>
-							</div>
-							<div>
-								<a href="http://desa.tambakkalisogo.umsida.ac.id">3. Tambak Kalisogo </a>
-							</div>
-							<div>
-								<a href="http://desa.permisan.umsida.ac.id">4. Permisan </a>
-							</div>
-							<div>
-								<a href="http://desa.trompoasri.umsida.ac.id">5. Trompo Asri (Dusun Janganasem)</a>
-							</div>
-							<div>
-								<a href="http://desa.dukuhsari.umsida.ac.id">6. Dukuhsari </a>
-							</div>
-							<div>
-								<a href="http://desa.kedungcangkring.umsida.ac.id">7. Kedung Cangkring </a>
-							</div>
-							<div>
-								<a href="http://desa.jemirahan.umsida.ac.id">8. Jemirahan </a>
-							</div>
-							<div>
-								<a href="http://desa.balongtani.umsida.ac.id">9. Balongtani </a>
-							</div>
-							<div>
-								<a href="http://desa.panggreh.umsida.ac.id"> 10. Panggreh </a>
-							</div>
-							<div>
-								<a href="http://desa.semambung.umsida.ac.id">11. Semambung </a>
-							</div>
-							<div>
-								<a href="http://desa.kedungrejo.umsida.ac.id">12. Kedungrejo </a>
-							</div>
-							<div>
-								<a href="http://desa.kedungpandan.umsida.ac.id">13. Kedungpandan (Dusun Tlocor)  </a>
-                                <a href="http://desa.prasung.umsida.ac.id">1. Prasung</a>
-							</div>
-							<div>
-								<a href="http://desa.damarsi.umsida.ac.id">2. Damarsi</a>
-							</div>
-							<div>
-								<a href="http://desa.sawohan.umsida.ac.id">3. Sawohan </a>
-							</div>
-							<div>
-								<a href="http://desa.dukuhtengah.umsida.ac.id">4. Dukuhtengah </a>
-							</div>
-							<div>
-								<a href="http://desa.sukorejo.umsida.ac.id">5. Sukorejo</a>
-							</div>
-							<div>
-								<a href="http://desa.sidokepung.umsida.ac.id">6. Sidokepung </a>
-							</div>
-							<div>
-								<a href="http://desa.entalsewu.umsida.ac.id">7. Ental Sewu </a>
-							</div>
-							<div>
-								<a href="http://desa.pagerwojo.umsida.ac.id">8. Pagerwojo </a>
-							</div>
-							<div>
-								<a href="http://desa.sidomulyo.umsida.ac.id">9. Sidomulyo </a>
-							</div>
-							<div>
-								<a href="http://desa.banjarsari.umsida.ac.id"> 10. Banjarsari </a>	
-							</div>
-							<div>	
-								<a href="http://desa.siwalanpanji.umsida.ac.id">11. Siwalan Panji </a>			
-							</div>
-							<div>
-								<a href="http://desa.wadungasih.umsida.ac.id">12. Wadung Asih </a>
-                                <a href="http://desa.tebel.umsida.ac.id">1. Tebel</a>
-							</div>					
-							<div>
-								<a href="http://desa.karangbong.umsida.ac.id"> 2. Karangbong</a>
-							</div>
-							<div>	
-								<a href="http://desa.sruni.umsida.ac.id"></i>3. Sruni </a>					
-							</div>
-							<div>
-								<a href="http://desa.keboananom.umsida.ac.id"></i>4. Keboan Anom </a>
-							</div>	
-							<div>	
-								<a href="http://desa.keboansikep.umsida.ac.id"> 5. Keboan Sikep</a>				
-							</div>
-							<div>
-								<a href="http://desa.gedangan.umsida.ac.id">6. Gedangan </a>
-							</div>	
-							<div>					
-								<a href="http://desa.wedi.umsida.ac.id">7. Wedi </a>
-							</div>
-							<div>	
-								<a href="http://desa.ketajen.umsida.ac.id"></i>8. Ketajen </a>
-							</div>						
-							<div>
-								<a href="http://desa.punggul.umsida.ac.id"></i>9. Punggul </a>
-							</div>	
-							<div>	
-								<a href="http://desa.kragan.umsida.ac.id"></i>10. Kragan </a>
+desa.kedungbanteng.umsida.ac.id
+desa.putat.umsida.ac.id
+desa.kalitengah.umsida.ac.id
+desa.kalisampurno.umsida.ac.id
+desa.kludan.umsida.ac.id
+desa.boro.umsida.ac.id
+desa.randegan.umsida.ac.id
+desa.kedensari.umsida.ac.id
+desa.ganggangpanjang.umsida.ac.id
+desa.ketegan.umsida.ac.id
+desa.kalidawir.umsida.ac.id
+desa.banjarasri.umsida.ac.id
+desa.banjarpanji.umsida.ac.id
+desa.penatarsewu.umsida.ac.id
+desa.sentul.umsida.ac.id1
+desa.keboguyang.umsida.ac.id
+desa.tanjungsari.umsida.ac.id
+desa.tambakkalisogo.umsida.ac.id
+desa.permisan.umsida.ac.id
+desa.trompoasri.umsida.ac.id
+desa.dukuhsari.umsida.ac.id
+desa.kedungcangkring.umsida.ac.id
+desa.jemirahan.umsida.ac.id
+desa.balongtani.umsida.ac.id
+desa.panggreh.umsida.ac.id
+desa.semambung.umsida.ac.id
+desa.kedungrejo.umsida.ac.id
+desa.kedungpandan.umsida.ac.id  
+desa.prasung.umsida.ac.id
+desa.damarsi.umsida.ac.id
+desa.sawohan.umsida.ac.id
+desa.dukuhtengah.umsida.ac.id
+desa.sukorejo.umsida.ac.id
+desa.sidokepung.umsida.ac.id
+desa.entalsewu.umsida.ac.id
+desa.pagerwojo.umsida.ac.id
+desa.sidomulyo.umsida.ac.id
+desa.banjarsari.umsida.ac.id	
+desa.siwalanpanji.umsida.ac.id			
+desa.wadungasih.umsida.ac.id
+desa.tebel.umsida.ac.id
+desa.karangbong.umsida.ac.id
+desa.sruni.umsida.ac.id					
+desa.keboananom.umsida.ac.id
+desa.keboansikep.umsida.ac.id			
+desa.gedangan.umsida.ac.id				
+desa.wedi.umsida.ac.id
+desa.ketajen.umsida.ac.id					
+desa.punggul.umsida.ac.id
+desa.kragan.umsida.ac.id
