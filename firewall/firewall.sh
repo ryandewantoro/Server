@@ -24,3 +24,4 @@ echo "sshd: 192.168.10.202" >> /etc/hosts.allow
 echo "sshd: 192.168.10.36" >> /etc/hosts.allow
 #open port 22 dari ip 192.168.10.29
 echo "sshd: 192.168.10.29" >> /etc/hosts.allow
+echo "sshd: 192.168.10.19" >> /etc/hosts.allow
