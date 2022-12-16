@@ -1,0 +1,4 @@
+0 4   *   *   *    /sbin/shutdown -r +5
+0 12   *   *   *    /sbin/shutdown -r +5
+0 20   *   *   *    /sbin/shutdown -r +5
+@hourly chmod -R 755 /var/www/
