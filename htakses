@@ -1,0 +1,21 @@
+# BEGIN WordPress
+
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+</Files>
+# END WordPress
+
+
+<FilesMatch "\.(php)$">
+Order Deny,Allow
+Deny from all
+</FilesMatch>
