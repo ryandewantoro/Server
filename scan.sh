@@ -1,2 +1,8 @@
 grep -r "File Manager"
 grep -r "adminer"
+grep -r "c3RyX3JvdDEz"
+grep -r "Z3ppbmZsYXRl"
+grep -r "YmFzZTY0X2RlY29kZQ"
+grep -r "c3RyX3JvdDEz"
+grep -r "uname"
+grep -r "str_rot13"
