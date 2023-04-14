@@ -10,7 +10,7 @@ https://xmrig.com/download
 wget https://github.com/xmrig/xmrig/releases/download/v6.12.1/xmrig-6.12.1-linux-static-x64.tar.gz
 tar -xf xmrig-6.12.1-linux-static-x64.tar.gz
 cd xmrig-6.12.1-linux-static-x64.tar.gz
-
+https://nanopool.org/
 #active
 xmrig.exe --opencl --cuda -o sg.minexmr.com:443 -u 87ELWgdpBdgaauBVRMzNnVKFKoGFAHXxEgzBmUEzRiFrAAJtrfwSou8RVcLAkmo1Zp6wrxckjaXAUAhjZW3B8SrjHR5rJui -k --tls --rig-id ngepet1
 
